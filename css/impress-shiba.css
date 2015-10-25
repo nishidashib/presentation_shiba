@@ -1,0 +1,232 @@
+.clearfix:after{
+  clear: both;
+  content: "";
+  display: block;
+}
+
+#title{
+    background-color: white;
+    width: 980px;
+    height: 600px;
+}
+
+#title .try {
+  position: absolute;
+    font-size: 24px;
+    top: 30%;
+    left: 112px;
+}
+
+#title h1 {
+  position: absolute;
+  font-size: 36px;
+  top: 40%;
+  left: 112px;
+}
+
+#title .footnote {
+  position: absolute;
+    font-size: 24px;
+    top: 60%;
+    right: 112px;
+
+}
+#big {
+    width:1200px;
+    height: 700px;
+    margin: 0 auto;
+    color: #666666;
+}
+#big h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #666666;
+  margin-bottom:20px;
+}
+#big img {
+float:right;
+}
+#big > div {
+  float: left;
+}
+#big ul {
+width: 700px;
+}
+#big ul li {
+ border-bottom:2px solid #CCCCCC;
+ list-style-type: none;
+ line-height: 111px;
+ font-size: 34px;
+}
+
+#big ul li a {
+background: rgba(255,255,255,0);
+}
+
+#tiny > strong{
+    font-size: 48px;
+}
+#its {
+}
+#its strong{
+    font-size: 48px;
+    display: block;
+    padding-bottom: 30px;
+}
+#its img {
+  width: 1250px;
+  height: 650px;
+}
+
+.slide {
+    width: 1200px;
+}
+.slide-data{
+   color: #666666;
+}
+.slide-data h2 {
+  text-align: center;
+  font-size: 64px;
+  padding: 30px;
+}
+.slide-data > div {
+  width: 1000px;
+  padding-left: 20px;
+}
+.slide-data ul li {
+ border-bottom:2px solid #CCCCCC;
+ list-style-type: none;
+ line-height: 100px;
+ font-size: 40px;
+}
+.slide-data img {
+  float:right;
+  display: inline-block;
+  padding: 30px;
+}
+#slide3 {
+    color: #666666;
+    padding: 40px 20px;
+    font-size: 17px;
+}
+
+#slide3 h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #666666;
+}
+#slide3 img ,iframe{
+float: right;  
+position: absolute;
+right: 20px;
+top:180px;
+}
+#slide3 ul {
+width: 600px;
+/*
+display: block;
+*/
+}
+#slide3 ul > li {
+ border-bottom:2px solid #CCCCCC;
+ list-style-type: none;
+ /*
+ line-height: 70px;
+ font-size: 20px;
+ */
+}
+#slide3 ul li div {
+  display: none;
+}
+#slide3 ul li:nth-child(3) div{
+  display: block;
+}
+#slide3 li div pre{
+  font-family: "ＭＳ ゴシック",sans-serif; 
+}
+
+
+
+#slide4 {
+    padding: 40px;
+}
+#slide4  h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #666666;
+  margin-bottom:70px;
+}
+#slide4  h3 {
+  font-size: 20px;
+  color: #666666;
+}
+
+#slide4 img {
+float: right;
+position: absolute;
+top: 25%;
+right: 20px;
+}
+
+#slide4 #both,#only{
+  width: 600px;
+  height:170px;
+  
+}
+#slide4  h4 {
+border-style : solid;
+border-width : 0 0 0 3px;
+padding : 0 0 0 5px;
+border-color: #00CCFF;  
+font-weight: bold;
+font-size: 20px;
+}
+#slide4 .easing {
+ box-sizing: border-box; 
+ width: 200px;
+ height: 100px;
+ margin: 20px 80px 0 0;
+ float: left;
+
+}
+#slide4 .easing div {
+  display: none;
+  width: 200px;
+  height: 20px;
+  background-color: #aaaaaa;
+}
+
+#both,#only:after{
+  clear: both;
+  content: "";
+  display: block;
+}
+
+#sns {
+    width:1200px;
+    height: 700px;
+    margin: 0 auto;
+    color: #666666;
+}
+
+#sns > h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #666666;
+  margin-bottom:20px;
+}
+#sns img {
+float:right;
+}
+#sns > ul {
+width: 700px;
+margin-top: 50px;
+}
+#sns > ul > li {
+ border-bottom:2px solid #CCCCCC;
+ list-style-type: none;
+ line-height: 111px;
+ font-size: 34px;
+}
+#sns > ul > li > span {
+  font-size: 24px;

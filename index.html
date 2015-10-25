@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>ログの可視化 ~fluentd,elasticsearch,kibana,chef~</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/impress-shiba.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+ <div id="title" class="step" data-x="0" data-y="0" data-scale="3">
+        <br>
+        <h1>ログの可視化 ~fluentd,elasticsearch,kibana,chef~</h1>
+        <span class="footnote">技術部 柴崎 武史</span>
+</div>
+
+<div id="big" class="step clearfix" data-x="3000" data-y="1500" data-rotate="180" data-scale="0.5">
+    <h2>自己紹介</h2>  
+    <img src="./img/first.jpg" alt="自画像" width="420px" height="560px">
+    <div>
+    <ul>
+        <li>氏名 : 柴崎 武史</li>
+        <li>勤務先 : yahoo</li>
+        <li>やってること : 広告技術</li>
+        <li>具体的に : yahooトップページからのリンク先</li>
+        <li>今日見せたいこと : <a href="http://192.168.33.20/kibana/index.html#/dashboard/elasticsearch/apache_access_log" target="new">ログの可視化</a></li>
+    </ul>
+    </div>
+</div>
+
+<div id="tiny" class="step" data-x="2825" data-y="4200" data-z="-3000" data-rotate="270" data-scale="5">
+    <strong>How did you do that?</strong>
+</div>
+
+<div id="its" class="step" data-x="525" data-y="3825" data-rotate="270" data-scale="1">
+    <strong>Fluentd,Elasticsearch,Kibaba</strong>
+    <div>
+        <img src="./img/system.png">
+    </div>
+</div>
+
+<div class="slide-data step slide clearfix" data-x="0" data-y="-1500">
+    <h2>Flunetd</h2>
+    <img src="./img/fluentd.png" alt="fluentd" width="240px" height="352px">
+    <div>
+        <ul>
+            <li>rubyベースのオープンソース</li>
+            <li>ログの収集,分析</li>
+            <li>リアルタイム処理</li>
+            <li>webサーバーへのアクセスを検知</li>
+            <li>データをElasticsearchへ転送</li>            
+        </ul>
+    </div>
+
+</div>
+
+<div class="slide-data step slide clearfix" data-x="2000" data-y="-1500">
+    <h2>Elasticsearch</h2>
+    <img src="./img/elasticsearch.png" alt="fluentd" width="400px">
+    <div>
+        <ul>
+            <li>Javaベースのオープンソース
+            </li>
+            <li>検索サーチエンジンである。
+            </li>
+            <li>転送されたログをjsonで格納
+            </li>
+            <li>RestfulApiで操作
+            </li>
+        </ul>
+    </div>    
+</div>
+<div class="slide-data step slide clearfix" data-x="3500" data-y="-1500">
+    <h2>Kibana</h2>  
+    <img src="./img/kibana.png" alt="kibana" width="240px">
+    <div>
+        <ul>
+        <li>Elasticsearchに格納されたログを可視化
+        </li>
+        <li>angular.jsで実装
+        </li>
+    </ul>
+    </div>
+</div>
+
+<div class="slide-data step slide clearfix" data-x="3500" data-y="-500">
+    <h2>Chef</h2>  
+    <img src="./img/chef.png" alt="chef" width="240px">
+    <div>
+        <ul>
+        <li>インフラ構成の自動化
+        </li>
+        <li>Chef zero
+        </li>
+        <li>knife zero
+        </li>
+        <li>環境構築を自動化する。
+        </li>
+    </ul>
+    </div>
+</div>
+
+<div class="slide-data step slide clearfix" data-x="3500" data-y="300">
+    <h2>参考文献,公式ドキュメント</h2>  
+    <div>
+        <ul>
+        <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/477416500X/te2u-22/" target="new">Chef実践入門</a><span>←←わかりやすかったけど、、</span>
+        </li>
+        <li>↑↑vagrantで環境構築してる。Docker ,Chef zeroは無し。
+        </li>
+        <li>https://github.com/nishidashib/shiba_presentation
+        </li>
+        <li>https://github.com/nishidashib/td-agant-es-kibana3-chef
+        </li>
+    </ul>
+    </div>
+</div>
+
+
+<div id="sns" class="step big_clearfix" data-x="6300" data-y="1500" data-rotate="90" data-scale="5">
+    <h2>Blog,SNS & Github</h2> 
+    <a href="./self/index.html" target="new"> 
+    <img src="img/second.jpg" alt="self" width="420px" height="560px">
+    </a>    
+    <ul>
+        <li>Tech-Blog : マシンガン・ジャブ<span>（coming soon）</span></li>
+        <li>Twitter : ニシ・ダシバ(@nishidashib)</li>
+        <li>Facebook : 西田柴崎 柴哲平 武史</li>
+        <li>github: https://github.com/nishidashib</li>
+    </ul>
+</div>
+<div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10"></div>
+</div>
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
+
