@@ -3,30 +3,25 @@
   content: "";
   display: block;
 }
+ul li a {
+background: rgba(255,255,255,0);
+}
 
 #title{
     background-color: white;
-    width: 980px;
-    height: 600px;
+    width: 1200px;
+    height: 850px;
 }
-
-#title .try {
-  position: absolute;
-    font-size: 24px;
-    top: 30%;
-    left: 112px;
-}
-
 #title h1 {
   position: absolute;
-  font-size: 36px;
+  font-size: 69px;
   top: 40%;
-  left: 112px;
+  text-align: center;
 }
 
 #title .footnote {
   position: absolute;
-    font-size: 24px;
+    font-size: 34px;
     top: 60%;
     right: 112px;
 
@@ -58,15 +53,17 @@ width: 700px;
  line-height: 111px;
  font-size: 34px;
 }
-
-#big ul li a {
-background: rgba(255,255,255,0);
+#tiny {
+  width: 1200px;
+  height: 700px;
+  position: relative;
 }
-
-#tiny > strong{
-    font-size: 48px;
-}
-#its {
+#tiny strong{
+  display: inline-block;
+    font-size: 74px;
+    top:40%;
+    left: 240px;
+    position: absolute;
 }
 #its strong{
     font-size: 48px;
@@ -77,7 +74,6 @@ background: rgba(255,255,255,0);
   width: 1250px;
   height: 650px;
 }
-
 .slide {
     width: 1200px;
 }
@@ -86,8 +82,9 @@ background: rgba(255,255,255,0);
 }
 .slide-data h2 {
   text-align: center;
-  font-size: 64px;
-  padding: 30px;
+  font-size: 48px;
+  padding: 50px;
+ border-bottom:2px solid #CCCCCC;
 }
 .slide-data > div {
   width: 1000px;
@@ -97,110 +94,41 @@ background: rgba(255,255,255,0);
  border-bottom:2px solid #CCCCCC;
  list-style-type: none;
  line-height: 100px;
- font-size: 40px;
+ font-size: 32px;
 }
 .slide-data img {
   float:right;
   display: inline-block;
   padding: 30px;
 }
-#slide3 {
-    color: #666666;
-    padding: 40px 20px;
-    font-size: 17px;
+#apache ul li:last-child{
+  font-size: 32px;
 }
 
-#slide3 h2 {
-  text-align: center;
-  font-size: 40px;
-  color: #666666;
+#ops div{
+  margin: 0 auto;
 }
-#slide3 img ,iframe{
-float: right;  
-position: absolute;
-right: 20px;
-top:180px;
-}
-#slide3 ul {
-width: 600px;
-/*
-display: block;
-*/
-}
-#slide3 ul > li {
- border-bottom:2px solid #CCCCCC;
+#ops ul li {
+ border-top:2px solid #CCCCCC;
+ border-bottom:1px solid #CCCCCC;
  list-style-type: none;
- /*
- line-height: 70px;
- font-size: 20px;
- */
+ line-height: 250px;
+ font-size: 48px;
 }
-#slide3 ul li div {
-  display: none;
+
+#ore {
+  position: relative;
 }
-#slide3 ul li:nth-child(3) div{
-  display: block;
-}
-#slide3 li div pre{
-  font-family: "ＭＳ ゴシック",sans-serif; 
+#ore div {
+ font-size: 200px;
+ top: 300px;
+ left: 40px; 
+ position: absolute;
+ margin: 0 auto;
 }
 
 
 
-#slide4 {
-    padding: 40px;
-}
-#slide4  h2 {
-  text-align: center;
-  font-size: 40px;
-  color: #666666;
-  margin-bottom:70px;
-}
-#slide4  h3 {
-  font-size: 20px;
-  color: #666666;
-}
-
-#slide4 img {
-float: right;
-position: absolute;
-top: 25%;
-right: 20px;
-}
-
-#slide4 #both,#only{
-  width: 600px;
-  height:170px;
-  
-}
-#slide4  h4 {
-border-style : solid;
-border-width : 0 0 0 3px;
-padding : 0 0 0 5px;
-border-color: #00CCFF;  
-font-weight: bold;
-font-size: 20px;
-}
-#slide4 .easing {
- box-sizing: border-box; 
- width: 200px;
- height: 100px;
- margin: 20px 80px 0 0;
- float: left;
-
-}
-#slide4 .easing div {
-  display: none;
-  width: 200px;
-  height: 20px;
-  background-color: #aaaaaa;
-}
-
-#both,#only:after{
-  clear: both;
-  content: "";
-  display: block;
-}
 
 #sns {
     width:1200px;
